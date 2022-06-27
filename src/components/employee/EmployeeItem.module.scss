@@ -1,0 +1,88 @@
+@import "../../variables.scss";
+
+.itemContainer {
+  width: calc(33.3% - 20px);
+  margin: 10px;
+  box-shadow: $shadow;
+  margin-bottom: 25px;
+
+  .itemTopside {
+    width: 100%;
+    height: 130px;
+    background: #1fa2ff;
+    background: -webkit-linear-gradient(
+      to right,
+      #a6ffcb,
+      #12d8fa,
+      #1fa2ff
+    ); 
+    background: linear-gradient(
+      to right,
+      #a6ffcb,
+      #12d8fa,
+      #1fa2ff
+    ); 
+
+    position: relative;
+    border-top-left-radius: $borderRadiusSM;
+    border-top-right-radius: $borderRadiusSM;
+
+    .itemImg {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      bottom: -50px;
+      left: 25%;
+      border-radius: 50%;
+      border: 3px solid white;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .itemBottomside {
+    padding: 20px;
+    padding-top: 75px;
+    text-align: left;
+    border-bottom-left-radius: $borderRadiusSM;
+    border-bottom-right-radius: $borderRadiusSM;
+
+    .userFullname {
+      color: black;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+    }
+
+    .threeDot{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .userInfos {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .voteButton {
+      width: 100%;
+      border: none;
+      margin-top: 20px;
+      padding: 7px;
+      background-color: rgba(52, 152, 219, 0.3);
+      border-radius: $borderRadiusSM;
+      font-weight: 700;
+      transition: .3s ease-in-out;
+      &:hover{
+        background-color: rgba(52, 152, 219, 0.5);
+      }
+    }
+  }
+}

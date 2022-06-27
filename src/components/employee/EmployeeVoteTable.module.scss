@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.voteTableContainer {
+  width: 28%;
+  margin-top: 12px;
+
+    .firstNum{
+        background-color: $gold-medal;
+    }
+    .secondNum{
+        background-color: $silver-medal;
+    }
+    .thirdNum{
+        background-color: $bronze-medal;
+    }
+
+  .listContent {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+
+    .listItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid lightgray;
+      padding-top: 25px;
+      position: relative;
+
+      .number {
+        position: absolute;
+        top: 0;
+        left: 45%;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 0px 15px;
+        background-color: aquamarine;
+        // border-bottom-left-radius: $borderRadiusSM;
+        // border-bottom-right-radius: $borderRadiusSM;
+      }
+
+      .userImg {
+        width: 25%;
+        height: 100%;
+        border-radius: 50%;
+        img {
+          width: 70%;
+          height: 70%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+      .userInfo {
+        width: 60%;
+        .title {
+          margin-bottom: 1px;
+          font-weight: 500;
+        }
+      }
+      .userVoteCount {
+        max-width: 15%;
+
+        .voteCountText{
+            text-align: center;
+            border-radius: 50%;
+            background-color: aquamarine;
+            font-weight: 700;
+            padding: 4px 10px;
+        }
+      }
+    }
+  }
+}
