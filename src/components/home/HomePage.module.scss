@@ -1,0 +1,45 @@
+.container{
+    width: 100vw;
+    // height: 100vh;
+
+   .content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background-image: url("../../../public/assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    filter: blur(4px);
+   }
+    
+    .title{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .subTitle{
+        position: absolute;
+        top: 47%;
+        left: 62%;
+        font-size: 75px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.5);
+    }
+}

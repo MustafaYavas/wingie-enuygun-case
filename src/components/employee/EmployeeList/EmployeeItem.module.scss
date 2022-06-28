@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../../variables.scss";
 
 .itemContainer {
   width: calc(33.3% - 20px);
@@ -72,6 +72,7 @@
     }
 
     .voteButton {
+      cursor: pointer;
       width: 100%;
       border: none;
       margin-top: 20px;

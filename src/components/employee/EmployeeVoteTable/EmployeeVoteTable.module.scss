@@ -1,25 +1,48 @@
-@import "../../variables.scss";
+@import "../../../variables.scss";
 
 .voteTableContainer {
   width: 28%;
   margin-top: 12px;
 
-    .firstNum{
-        background-color: $gold-medal;
+  .mainTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+
+  .firstNum {
+    background-color: $goldMedal;
+    &:hover {
+      background-color: rgba(249, 173, 14, 0.7) !important;
     }
-    .secondNum{
-        background-color: $silver-medal;
+  }
+  .secondNum {
+    background-color: $silverMedal;
+    &:hover {
+      background-color: rgba(209, 215, 218, 0.9) !important;
     }
-    .thirdNum{
-        background-color: $bronze-medal;
+  }
+  .thirdNum {
+    background-color: $bronzeMedal;
+    &:hover {
+      background-color: rgba(223, 126, 8, 0.7) !important;
     }
+  }
 
   .listContent {
     display: flex;
     flex-direction: column;
     border: 1px solid lightgray;
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .listItem {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,6 +50,10 @@
       border-bottom: 1px solid lightgray;
       padding-top: 25px;
       position: relative;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        background-color: rgba(211, 211, 211, 0.3);
+      }
 
       .number {
         position: absolute;
@@ -35,7 +62,7 @@
         font-size: 15px;
         font-weight: 700;
         padding: 0px 15px;
-        background-color: aquamarine;
+        background-color: $themeColor;
         // border-bottom-left-radius: $borderRadiusSM;
         // border-bottom-right-radius: $borderRadiusSM;
       }
@@ -61,12 +88,12 @@
       .userVoteCount {
         max-width: 15%;
 
-        .voteCountText{
-            text-align: center;
-            border-radius: 50%;
-            background-color: aquamarine;
-            font-weight: 700;
-            padding: 4px 10px;
+        .voteCountText {
+          text-align: center;
+          border-radius: 50%;
+          background-color: $themeColor;
+          font-weight: 700;
+          padding: 4px 10px;
         }
       }
     }

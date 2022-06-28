@@ -1,5 +1,5 @@
-import EmployeesList from '../components/employee/EmployeesList';
-import EmployeeVoteTable from '../components/employee/EmployeeVoteTable';
+import EmployeesList from '../../components/employee/EmployeeList/EmployeesList';
+import EmployeeVoteTable from '../../components/employee/EmployeeVoteTable/EmployeeVoteTable';
 
 import styles from './Employees.module.scss'
 

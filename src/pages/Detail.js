@@ -1,4 +1,4 @@
-import EmployeeDetail from '../components/employee/EmployeeDetail';
+import EmployeeDetail from '../components/employee/EmployeeDetail/EmployeeDetail';
 
 const Detail = () => {
     return (

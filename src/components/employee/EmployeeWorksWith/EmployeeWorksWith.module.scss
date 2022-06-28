@@ -1,0 +1,34 @@
+@import "../../../variables.scss";
+
+.container {
+	width: 20%;
+	height: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	padding: 10px;
+
+	.image {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	.fullname {
+		margin-top: 5px;
+		font-size: 13px;
+		font-weight: 500;
+		color: $subtextColor;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}

@@ -1,0 +1,194 @@
+@import "../../../variables.scss";
+
+a{
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1400px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+
+	.common {
+		max-width: 800px;
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 20px;
+		box-shadow: $shadowLG;
+		border-radius: $borderRadiusSM;
+	}
+
+	.content {
+		height: 650px;
+
+		.goBack {
+			cursor: pointer;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: rgba(128, 128, 128, 0.8);
+			svg {
+				width: 50px;
+				height: 50px;
+				padding: 5px;
+			}
+		}
+
+		.cardTopside {
+			width: 100%;
+			height: 300px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.cardBottomside {
+			position: relative;
+			padding: 15px;
+			padding-top: 75px;
+
+			svg {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+			}
+
+			.employeeProfile {
+				position: absolute;
+				top: -63px;
+				left: 42%;
+				width: 130px;
+				height: 130px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 50%;
+					border: 3px solid white;
+				}
+			}
+
+			.employeeInfos {
+				text-align: center;
+
+				p {
+					margin-bottom: 3px;
+				}
+				.fullname {
+					font-size: 18px;
+					font-weight: 700;
+				}
+				.job {
+					font-size: 13px;
+					font-weight: 500;
+					text-transform: uppercase;
+					color: $subtextColor;
+				}
+			}
+
+			.employeeDetail {
+				margin-top: 40px;
+				display: flex;
+
+				p {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.sides {
+					width: 43%;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+
+					.employeeItem {
+						width: 95%;
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						margin-bottom: 10px;
+						background-color: rgba(211, 211, 211, 0.3);
+						border-radius: $borderRadiusSM;
+						padding: 2px 10px;
+						p {
+							margin: 7px 0;
+							font-weight: 500;
+						}
+					}
+				}
+
+				.rightAlign {
+					align-items: flex-end;
+				}
+
+				.middle {
+					width: 15%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+
+					.twitter {
+						color: #1da1f2;
+					}
+					.linkedin {
+						color: #0a66c2;
+					}
+					.github {
+						color: #34465d;
+					}
+
+					.social {
+						cursor: pointer;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background-color: rgba(211, 211, 211, 0.3);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-bottom: 7px;
+
+						svg {
+							margin: 0;
+							width: 25px;
+							height: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.worksWith {
+		height: 170px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 10px 15px;
+
+		.workTitle{
+			font-size: 17px;
+			margin: 0;
+			font-weight: 700;
+			text-transform: capitalize;
+			color: $subtextColor;
+		}
+
+		.allItems{
+			width: 100%;
+			height: 100px;
+			display: flex;
+			margin-top: 10px;
+			overflow-y: scroll;
+			overflow-x: unset;
+		}
+	}
+}

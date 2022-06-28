@@ -20,7 +20,8 @@ const employeeSlice = createSlice({
                 if(employee.login.uuid === action.payload) return {...employee, vote: employee.vote+1}
                 return employee;
             });
-            state.sortedEmployees = updatedEmployees.sort((a, b) => b.vote - a.vote);
+            const descendingSorted = updatedEmployees.sort((a, b) => b.vote - a.vote);
+            state.sortedEmployees = descendingSorted;
         }
     }
 })
