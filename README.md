@@ -1,6 +1,6 @@
 # Wingie Enuygun Bootcamp Graduation Project
 
-An application where company employees are listed and voted for the employee of the month. [Check it out here!]((https://mustafa-yavas-wingie-enuygun.netlify.app/)) 
+An application where company employees are listed and voted for the employee of the month. [Check it out here!](https://mustafa-yavas-wingie-enuygun.netlify.app/)
 
 ## Table of Contents
 * [Technologies](#technologies)
